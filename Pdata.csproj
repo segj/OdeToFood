@@ -1,0 +1,93 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7FDA555B-7873-44BF-8F8B-AB9888A153F9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Pdata</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\config\applicationhost.config" />
+    <None Include=".vs\OdeToFood\v15\.suo" />
+    <None Include=".vs\OdeToFood\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\OdeToFood\v15\Server\sqlite3\storage.ide" />
+    <None Include="OdeToFood\appsettings.json" />
+    <None Include="OdeToFood\bin\Debug\netcoreapp2.0\OdeToFood.deps.json" />
+    <None Include="OdeToFood\bin\Debug\netcoreapp2.0\OdeToFood.runtimeconfig.dev.json" />
+    <None Include="OdeToFood\bin\Debug\netcoreapp2.0\OdeToFood.runtimeconfig.json" />
+    <None Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.AssemblyInfoInputs.cache" />
+    <None Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.csproj.CoreCompileInputs.cache" />
+    <None Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.csprojResolveAssemblyReference.cache" />
+    <None Include="OdeToFood\obj\OdeToFood.csproj.nuget.cache" />
+    <None Include="OdeToFood\obj\OdeToFood.csproj.nuget.g.props" />
+    <None Include="OdeToFood\obj\OdeToFood.csproj.nuget.g.targets" />
+    <None Include="OdeToFood\obj\project.assets.json" />
+    <None Include="OdeToFood\Properties\launchSettings.json" />
+    <None Include="OdeToFood\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OdeToFood\bin\Debug\netcoreapp2.0\OdeToFood.dll" />
+    <Content Include="OdeToFood\bin\Debug\netcoreapp2.0\OdeToFood.pdb" />
+    <Content Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.csproj.FileListAbsolute.txt" />
+    <Content Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.dll" />
+    <Content Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.pdb" />
+    <Content Include="OdeToFood\OdeToFood.csproj" />
+    <Content Include="OdeToFood\OdeToFood.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OdeToFood\Controllers\AboutController.cs" />
+    <Compile Include="OdeToFood\Controllers\HomeController.cs" />
+    <Compile Include="OdeToFood\Models\Resturant.cs" />
+    <Compile Include="OdeToFood\obj\Debug\netcoreapp2.0\OdeToFood.AssemblyInfo.cs" />
+    <Compile Include="OdeToFood\Program.cs" />
+    <Compile Include="OdeToFood\Services\IGreeter.cs" />
+    <Compile Include="OdeToFood\Services\InMemoryResturantData.cs" />
+    <Compile Include="OdeToFood\Services\IResturantData.cs" />
+    <Compile Include="OdeToFood\Startup.cs" />
+    <Compile Include="OdeToFood\ViewModels\HomeIndexViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Pdata\v15\" />
+    <Folder Include="OdeToFood\Views\Shared\" />
+    <Folder Include="OdeToFood\wwwroot\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

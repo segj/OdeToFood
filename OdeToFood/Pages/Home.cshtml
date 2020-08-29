@@ -1,0 +1,19 @@
+﻿@page
+
+@model HomeModel
+
+<h1>All resturants</h1>
+<table>
+    @foreach (var resturant in Model.Resturants)
+    {
+        <tr>
+            <td>@resturant.Id</td>
+            <td>@resturant.Name</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@resturant.Id">More</a>
+            </td>
+
+        </tr>
+    }
+</table>
+}
